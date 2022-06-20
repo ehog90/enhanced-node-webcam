@@ -84,15 +84,15 @@ FSWebcam.prototype.generateSh = function (location) {
     : "";
 
   const bannerColour = scope.opts.bannerColour
-    ? "--banner-colour" + Utils.formatArg(scope.opts.bannerColour)
+    ? "--banner-colour " + Utils.formatArg(scope.opts.bannerColour)
     : "";
 
   const lineColour = scope.opts.lineColour
-    ? "--line-colour" + Utils.formatArg(scope.opts.lineColour)
+    ? "--line-colour " + Utils.formatArg(scope.opts.lineColour)
     : "";
 
   const info = scope.opts.info
-    ? "--info" + Utils.formatArg(scope.opts.info)
+    ? "--info " + Utils.formatArg(scope.opts.info)
     : "";
 
   var device = scope.opts.device ? "-d " + scope.opts.device : "";
