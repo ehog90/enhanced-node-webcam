@@ -1,5 +1,5 @@
 {
-    "name": "@ehog90/node-webcam",
+    "name": "enhanced-node-webcam",
     "version": "2.0.0",
     "description": "Cross platform webcam capture",
     "main": "index.js",
