@@ -91,7 +91,9 @@ FSWebcam.prototype.generateSh = function (location) {
     ? "--line-colour" + Utils.formatArg(scope.opts.lineColour)
     : "";
 
-  const info = scope.opts.info ? "--info" + scope.opts.info : "";
+  const info = scope.opts.info
+    ? "--info" + Utils.formatArg(scope.opts.info)
+    : "";
 
   var device = scope.opts.device ? "-d " + scope.opts.device : "";
 
