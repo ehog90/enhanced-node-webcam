@@ -28,3 +28,7 @@
 - Double-quotink some arguments with possible whitespace
 - lineColour, bannerColour, info support for FSWebcam
 - ES6
+
+### 2.0.1
+
+- Escape bannerColour, lineColour arguments with ""
