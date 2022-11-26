@@ -173,13 +173,13 @@ FSWebcam.prototype.generateSh = function (location) {
     " " +
     skip +
     " " +
-    shellLocation +
-    " " +
     underlay +
     " " +
     overlay +
     " " +
-    font;
+    font +
+    " " +
+    shellLocation;
 
   return sh;
 };
