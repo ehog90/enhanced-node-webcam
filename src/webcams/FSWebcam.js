@@ -95,6 +95,18 @@ FSWebcam.prototype.generateSh = function (location) {
     ? "--info " + Utils.formatArg(scope.opts.info)
     : "";
 
+  const overlay = scope.opts.overlay
+    ? "--overlay " + Utils.formatArg(scope.opts.overlay)
+    : "";
+
+  const underlay = scope.opts.underlay
+    ? "--underlay " + Utils.formatArg(scope.opts.underlay)
+    : "";
+
+  const font = scope.opts.font
+    ? "--font " + Utils.formatArg(scope.opts.font)
+    : "";
+
   var device = scope.opts.device ? "-d " + scope.opts.device : "";
 
   var grey = scope.opts.greyscale ? "--greyscale" : "";
@@ -161,7 +173,13 @@ FSWebcam.prototype.generateSh = function (location) {
     " " +
     skip +
     " " +
-    shellLocation;
+    shellLocation +
+    " " +
+    underlay +
+    " " +
+    overlay +
+    " " +
+    font;
 
   return sh;
 };
